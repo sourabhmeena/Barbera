@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Barbera</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="barbera.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <title>Barbera</title>
+</head>
+
+<body>
+  <main>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active"><i class="fa fa-home"></i>Home</a>
+      <a href="#news"><i class="fa fa-user"></i>News</a>
+      <a href="#contact"><i class="fa fa-phone"></i>Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <div class="searchbar">
+        <i class="fa fa-search"></i>
+        <input type="text" name="search" title="search here" placeholder="search ">
+      </div>
+    </div>
+    <!--nav end-->
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Barbera Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+          <input type="number" name="age" id="number" min="0" max="99" class="form-control" placeholder="Age" />
+        </div>
+        <div class="form-group">
+          <p>payment method</p>
+          <select id="dropdown" name="paymentmethod" class="form-control" required>
+            <option disabled selected value>----Select----</option>
+            <option value="student">Paytm</option>
+            <option value="job">phonpay</option>
+            <option value="learner">gpay</option>
+            <option value="preferNo">cash</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+
+
+       
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment"
+            placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </main> <!-- main end-->
+
+
+</body>
+
+</html>
